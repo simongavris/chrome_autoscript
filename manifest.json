@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Autoexecuter",
+    "description": "Execute Script when gutefrage.net is requested",
+    "browser_action":{"default_icon": "icon.png"},
+    "content_scripts": [
+        {
+            "matches": ["*://*.gutefrage.net/*"],
+            "js": ["script.js"]
+        }
+    ]
+}
